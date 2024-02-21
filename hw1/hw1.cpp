@@ -147,7 +147,7 @@ void saveScreenshot(const char * filename)
 void autoSave() {
     if (screenShotCounter <= 299) {
         char filename[40];
-        sprintf(filename, "../Examples/Heightmap-%04d.jpg", ++screenShotCounter);
+        sprintf(filename, "../newanime/Heightmap-%04d.jpg", ++screenShotCounter);
         saveScreenshot(filename);
     }
 }
