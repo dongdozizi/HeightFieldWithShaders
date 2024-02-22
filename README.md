@@ -33,9 +33,11 @@ This assignment is intended as a hands-on introduction to OpenGL and programming
  - animations - Restore the JPEG frames required for animation
  - openGLHelper - Helper files for OpenGL
  - Examples - Example output for the heightfield
- - hw1/heightmap - File for the input images
- - hw1/hw1.cpp - Main opengl program for this homework
- - hw1/Makefile - Make file for MacOS and Linux.
+ - hw1\heightmap - File for the input images
+ - hw1\hw1.cpp - Main opengl program for this homework
+ - hw1\Makefile - Make file for MacOS and Linux.
+ - hw1\hw1 - Compiled executable for MacOS
+ - hw1\Bin\Release\hw1.exe - Compiled executable for Windows
 
 ## To run the program
 
@@ -49,11 +51,11 @@ For compile, enter the hw1 folder and make
     // make the file
     make
 
-For only heightmap, excecute
+For only heightmap, execute
 
     ./hw1 <heightmap_file>
 
-For heightmap and enable texture mapping, excecute
+For heightmap and enable texture mapping, execute
 
     ./hw1 <heightmap_file> <texturemap_file>
 
@@ -74,9 +76,14 @@ Examples
 
 ### Windows
 
-For windows, just open the hw1.sln with visual studio, and change the command arguments for custom input. The input is simillar to MacOS. Default is 
+For windows, just open the hw1.sln with visual studio, and change the command arguments for custom input:
 
     ./heightmap/Oahu-160x128.jpg ./heightmap/Oahu.jpg
+
+Also you can just use the command prompt (cmd.exe), such as:
+
+    hw1\Bin\Release\hw1 hw1\heightmap\Oahu-160x128.jpg hw1\heightmap\Oahu.jpg
+    
 
 ## Instructions
 
@@ -113,7 +120,7 @@ Press `t` to enable\disable the Translate mode
 - **Texturemap the surface with an arbitrary image (If compatible)**: Press `7`
 - **Texturemap the surface with an image with image at same size (If compatible)**: Press `&` (which is `shift`+`7`)
 - **Reset the heightmap to initial view(Undo all the rotation, scaling and translation)**: Press `c`
-- **Enable moving camera**: Press `v`. In this mode:
+- **Enable moving camera**: Press `v` to enable\disable. In this mode:
   - `w` to move the camera position ahead.
   - `s` to move the camera position backward.
   - `a` to move the camera position left.
