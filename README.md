@@ -1,4 +1,4 @@
-# CSCI420-HW1-HeightFieldWithShaders
+# HeightFieldWithShaders
 
 ## Homework Website
 
